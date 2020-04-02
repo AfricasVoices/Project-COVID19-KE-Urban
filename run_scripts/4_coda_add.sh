@@ -18,7 +18,7 @@ DATA_ROOT=$3
 cd "$CODA_V2_ROOT/data_tools"
 git checkout "9a9a8e708e3f20f37848a6b02f79bcee43e5be3b"  # (master which supports segmenting)
 
-PROJECT_NAME="COVID19_KE_URBAN"
+PROJECT_NAME="COVID19_KE_Urban"
 DATASETS=(
     "s01e01"
 )

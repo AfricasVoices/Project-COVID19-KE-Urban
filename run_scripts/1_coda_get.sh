@@ -19,7 +19,7 @@ git checkout "9a9a8e708e3f20f37848a6b02f79bcee43e5be3b"  # (master which support
 
 mkdir -p "$DATA_ROOT/Coded Coda Files"
 
-PROJECT_NAME="COVID19_KE_URBAN"
+PROJECT_NAME="COVID19_KE_Urban"
 DATASETS=(
     "s01e01"
 )
