@@ -13,7 +13,8 @@
         "covid19_ke_urban_s01_demog"
       ],
       "TestContactUUIDs": [
-
+        "eed078e5-7d13-4f3c-ac93-8b477125b31d",
+        "67836f40-a155-4757-850c-b407bd1cd475"
       ]
     }
   ],
@@ -35,9 +36,9 @@
     {"RapidProKey": "Age (Text) - covid19_ke_urban_s01_demog", "PipelineKey": "age_raw"},
     {"RapidProKey": "Age (Time) - covid19_ke_urban_s01_demog", "PipelineKey": "age_time"}
   ],
-  "ProjectStartDate": "2000-01-01T00:00:00+03:00",
+  "ProjectStartDate": "2020-04-06T00:00:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",
-  "FilterTestMessages": false,
+  "FilterTestMessages": true,
   "MoveWSMessages": true,
   "DriveUpload": {
     "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
