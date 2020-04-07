@@ -159,9 +159,9 @@
     {
       "CodeID": "code-13595d16",
       "CodeType": "Normal",
-      "DisplayText": "humitarian aid",
+      "DisplayText": "humanitarian aid",
       "NumericValue": 13,
-      "StringValue": "humitarian_aid",
+      "StringValue": "humanitarian_aid",
       "VisibleInCoda": true
     },
     {
