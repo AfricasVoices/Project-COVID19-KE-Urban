@@ -60,7 +60,134 @@
       "VisibleInCoda": true,
       "Shortcut": "o"
     },
-
+    {
+      "CodeID": "code-a616f41e",
+      "CodeType": "Normal",
+      "DisplayText": "about coronavirus",
+      "NumericValue": 4,
+      "StringValue": "about_coronavirus",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-12d116fe",
+      "CodeType": "Normal",
+      "DisplayText": "symptoms",
+      "NumericValue": 5,
+      "StringValue": "symptoms",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-814d2995",
+      "CodeType": "Normal",
+      "DisplayText": "how to prevent",
+      "NumericValue": 6,
+      "StringValue": "how_to_prevent",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-42edb3de",
+      "CodeType": "Normal",
+      "DisplayText": "how to treat",
+      "NumericValue": 7,
+      "StringValue": "how_to_treat",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d86b0ee3",
+      "CodeType": "Normal",
+      "DisplayText": "how spread/transmitted",
+      "NumericValue": 8,
+      "StringValue": "how_spread_transmitted",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-514ad719",
+      "CodeType": "Normal",
+      "DisplayText": "what is govt policy",
+      "NumericValue": 9,
+      "StringValue": "what_is_govt_policy",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-0dc4e684",
+      "CodeType": "Normal",
+      "DisplayText": "kenya update",
+      "NumericValue": 10,
+      "StringValue": "kenya_update",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d3f640f5",
+      "CodeType": "Normal",
+      "DisplayText": "rumour/stigma/misinfo",
+      "NumericValue": 11,
+      "StringValue": "rumour_stigma_misinfo",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-41f1456f",
+      "CodeType": "Normal",
+      "DisplayText": "government response",
+      "NumericValue": 12,
+      "StringValue": "government_response",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ffe2ef33",
+      "CodeType": "Normal",
+      "DisplayText": "collective hope",
+      "NumericValue": 13,
+      "StringValue": "collective_hope",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-87cf8df1",
+      "CodeType": "Normal",
+      "DisplayText": "anxiety/panic",
+      "NumericValue": 14,
+      "StringValue": "anxiety_panic",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d19e5b77",
+      "CodeType": "Normal",
+      "DisplayText": "religious hope/practice",
+      "NumericValue": 16,
+      "StringValue": "religious_hope_practice",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-de1e6cb8",
+      "CodeType": "Normal",
+      "DisplayText": "denial",
+      "NumericValue": 17,
+      "StringValue": "denial",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-13595d16",
+      "CodeType": "Normal",
+      "DisplayText": "humanitarian aid",
+      "NumericValue": 18,
+      "StringValue": "humanitarian_aid",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-30363820",
+      "CodeType": "Normal",
+      "DisplayText": "call for awareness creation",
+      "NumericValue": 19,
+      "StringValue": "call_for_awareness_creation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a28dc21e",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 15,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
