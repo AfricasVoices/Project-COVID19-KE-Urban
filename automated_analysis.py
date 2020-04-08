@@ -480,7 +480,7 @@ if __name__ == "__main__":
 
             data = [{"Label": k, "Number of Participants": v} for k, v in label_counts.items()]
             fig = px.bar(data, x="Label", y="Number of Participants", template="plotly_white",
-                         title=f"Season Distribution: {cc.analysis_file_key}")
+                         title=f"Season Distribution: {cc.analysis_file_key}", width=len(label_counts) * 20 + 150)
             fig.update_xaxes(tickangle=-60)
             fig.write_image(f"{output_dir}/graphs/season_distribution_{cc.analysis_file_key}.png", scale=IMG_SCALE_FACTOR)
 
