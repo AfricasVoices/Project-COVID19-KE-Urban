@@ -189,6 +189,46 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-f8335d46",
+      "CodeType": "Normal",
+      "DisplayText": "gov policy - support on livelihoods",
+      "NumericValue": 20,
+      "StringValue": "gov_policy_support_on_livelihoods",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5a7ce2cb",
+      "CodeType": "Normal",
+      "DisplayText": "gov policy - masks",
+      "NumericValue": 21,
+      "StringValue": "gov_policy_masks",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e3556fb8",
+      "CodeType": "Normal",
+      "DisplayText": "gov policy - tests and treatment",
+      "NumericValue": 22,
+      "StringValue": "gov_policy_tests_and_treatment",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-349a78a2",
+      "CodeType": "Normal",
+      "DisplayText": "gov policy - transport",
+      "NumericValue": 23,
+      "StringValue": "gov_policy_transport",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d66ea912",
+      "CodeType": "Normal",
+      "DisplayText": "other gov rules",
+      "NumericValue": 24,
+      "StringValue": "other_gov_rules",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
