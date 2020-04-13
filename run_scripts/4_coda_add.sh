@@ -21,6 +21,7 @@ git checkout "9a9a8e708e3f20f37848a6b02f79bcee43e5be3b"  # (master which support
 PROJECT_NAME="COVID19_KE_Urban"
 DATASETS=(
     "s01e01"
+    "s01e02"
 )
 for DATASET in ${DATASETS[@]}
 do
