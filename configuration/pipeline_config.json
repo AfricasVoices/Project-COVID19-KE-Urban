@@ -8,7 +8,7 @@
       "ContactsFileName": "covid19_2_contacts",
       "ActivationFlowNames": [
         "covid19_ke_urban_s01e01_activation",
-        "covid19_ke_urban_s01e01_activation"
+        "covid19_ke_urban_s01e02_activation"
       ],
       "SurveyFlowNames": [
         "covid19_ke_urban_s01_demog"
