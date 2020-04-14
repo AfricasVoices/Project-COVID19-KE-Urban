@@ -22,6 +22,7 @@ mkdir -p "$DATA_ROOT/Coded Coda Files"
 PROJECT_NAME="COVID19_KE_Urban"
 DATASETS=(
     "s01e01"
+    "s01e02"
 )
 for DATASET in ${DATASETS[@]}
 do
