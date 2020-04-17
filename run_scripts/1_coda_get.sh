@@ -23,6 +23,7 @@ PROJECT_NAME="COVID19_KE_Urban"
 DATASETS=(
     "s01e01"
     "s01e02"
+    "s01e03"
 )
 for DATASET in ${DATASETS[@]}
 do
