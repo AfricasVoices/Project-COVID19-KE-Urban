@@ -60,7 +60,262 @@
       "VisibleInCoda": true,
       "Shortcut": "o"
     },
-
+    {
+      "CodeID": "code-53e56ce7",
+      "CodeType": "Normal",
+      "DisplayText": "about coronavirus",
+      "NumericValue": 4,
+      "StringValue": "about_coronavirus",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-61731f1e",
+      "CodeType": "Normal",
+      "DisplayText": "symptoms",
+      "NumericValue": 5,
+      "StringValue": "symptoms",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cb3b4d1c",
+      "CodeType": "Normal",
+      "DisplayText": "prevention",
+      "NumericValue": 6,
+      "StringValue": "prevention",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b474c5fa",
+      "CodeType": "Normal",
+      "DisplayText": "treatment",
+      "NumericValue": 7,
+      "StringValue": "treatment",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-abe69f00",
+      "CodeType": "Normal",
+      "DisplayText": "kenya update",
+      "NumericValue": 8,
+      "StringValue": "kenya_update",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3f69c864",
+      "CodeType": "Normal",
+      "DisplayText": "rumours",
+      "NumericValue": 9,
+      "StringValue": "rumours",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6b3fd0ce",
+      "CodeType": "Normal",
+      "DisplayText": "economic impact",
+      "NumericValue": 10,
+      "StringValue": "economic_impact",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2b25f335",
+      "CodeType": "Normal",
+      "DisplayText": "what is government policy",
+      "NumericValue": 11,
+      "StringValue": "what_is_government_policy",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cbd41856",
+      "CodeType": "Normal",
+      "DisplayText": "opinion on government policy",
+      "NumericValue": 12,
+      "StringValue": "opinion_on_government_policy",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e12a6dba",
+      "CodeType": "Normal",
+      "DisplayText": "call for right practice",
+      "NumericValue": 13,
+      "StringValue": "call_for_right_practice",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ff7b9912",
+      "CodeType": "Normal",
+      "DisplayText": "anxiety/panic",
+      "NumericValue": 14,
+      "StringValue": "anxiety_panic",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b83f718f",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 15,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-24c38fcf",
+      "CodeType": "Normal",
+      "DisplayText": "economic impact - no food",
+      "NumericValue": 16,
+      "StringValue": "economic_impact_no_food",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c7640aff",
+      "CodeType": "Normal",
+      "DisplayText": "economic impact - no rent",
+      "NumericValue": 17,
+      "StringValue": "economic_impact_no_rent",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a81e955a",
+      "CodeType": "Normal",
+      "DisplayText": "economic impact - unemployment",
+      "NumericValue": 18,
+      "StringValue": "economic_impact_unemployment",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-32a221ee",
+      "CodeType": "Normal",
+      "DisplayText": "what is government policy - tests",
+      "NumericValue": 19,
+      "StringValue": "what_is_government_policy_tests",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-85284042",
+      "CodeType": "Normal",
+      "DisplayText": "what is government policy - masks",
+      "NumericValue": 20,
+      "StringValue": "what_is_government_policy_masks",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2789df27",
+      "CodeType": "Normal",
+      "DisplayText": "what is government policy - education",
+      "NumericValue": 21,
+      "StringValue": "what_is_government_policy_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b11ca44d",
+      "CodeType": "Normal",
+      "DisplayText": "what is government policy - limits on activities",
+      "NumericValue": 22,
+      "StringValue": "what_is_government_policy_limits_on_activities",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-48f7055b",
+      "CodeType": "Normal",
+      "DisplayText": "what is government policy - policing",
+      "NumericValue": 23,
+      "StringValue": "what_is_government_policy_policing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5e88f1f0",
+      "CodeType": "Normal",
+      "DisplayText": "what is government policy - curfew",
+      "NumericValue": 24,
+      "StringValue": "what_is_government_policy_curfew",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a35cc13b",
+      "CodeType": "Normal",
+      "DisplayText": "opinion on government policy - tests",
+      "NumericValue": 25,
+      "StringValue": "opinion_on_government_policy_tests",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-72e84c27",
+      "CodeType": "Normal",
+      "DisplayText": "opinion on government policy - education",
+      "NumericValue": 26,
+      "StringValue": "opinion_on_government_policy_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-53814d93",
+      "CodeType": "Normal",
+      "DisplayText": "opinion on government policy - limits on activities",
+      "NumericValue": 27,
+      "StringValue": "opinion_on_government_policy_limits_on_activities",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-47316091",
+      "CodeType": "Normal",
+      "DisplayText": "opinion on government policy - masks",
+      "NumericValue": 28,
+      "StringValue": "opinion_on_government_policy_masks",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3b368617",
+      "CodeType": "Normal",
+      "DisplayText": "opinion on government policy - policing",
+      "NumericValue": 29,
+      "StringValue": "opinion_on_government_policy_policing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-12d26531",
+      "CodeType": "Normal",
+      "DisplayText": "opinion on government policy - curfew",
+      "NumericValue": 30,
+      "StringValue": "opinion_on_government_policy_curfew",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9fb94e5c",
+      "CodeType": "Normal",
+      "DisplayText": "call for right practice - social distancing",
+      "NumericValue": 31,
+      "StringValue": "call_for_right_practice_social_distancing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4297a0ab",
+      "CodeType": "Normal",
+      "DisplayText": "call for right practice - hygiene",
+      "NumericValue": 32,
+      "StringValue": "call_for_right_practice_hygiene",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-79334642",
+      "CodeType": "Normal",
+      "DisplayText": "call for right practice - multiple",
+      "NumericValue": 33,
+      "StringValue": "call_for_right_practice_multiple",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ae2129ae",
+      "CodeType": "Normal",
+      "DisplayText": "anxiety/panic - fear of getting virus",
+      "NumericValue": 34,
+      "StringValue": "anxiety_panic_fear_of_getting_virus",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-76d7dd90",
+      "CodeType": "Normal",
+      "DisplayText": "anxiety/panic - stress/sadness",
+      "NumericValue": 35,
+      "StringValue": "anxiety_panic_stress_sadness",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
