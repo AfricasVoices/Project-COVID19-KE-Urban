@@ -157,7 +157,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-a63298ca",
+      "CodeID": "code-b2cbc2be",
       "CodeType": "Normal",
       "DisplayText": "what gov - tests and treatment",
       "NumericValue": 16,
@@ -165,7 +165,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-1b9402aa",
+      "CodeID": "code-ef4d3100",
       "CodeType": "Normal",
       "DisplayText": "what gov - masks",
       "NumericValue": 17,
@@ -173,7 +173,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-efb85bb7",
+      "CodeID": "code-08079f43",
       "CodeType": "Normal",
       "DisplayText": "what gov - education",
       "NumericValue": 18,
@@ -181,7 +181,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-a68f19ee",
+      "CodeID": "code-3a6ab93b",
       "CodeType": "Normal",
       "DisplayText": "what gov - limits social activities",
       "NumericValue": 19,
@@ -189,7 +189,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-6f56ac3f",
+      "CodeID": "code-72006e1a",
       "CodeType": "Normal",
       "DisplayText": "what gov - policing",
       "NumericValue": 20,
@@ -197,7 +197,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-5a2eb6cb",
+      "CodeID": "code-50477a3c",
       "CodeType": "Normal",
       "DisplayText": "what gov - curfew",
       "NumericValue": 21,
@@ -205,7 +205,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-d148b34e",
+      "CodeID": "code-92b65241",
       "CodeType": "Normal",
       "DisplayText": "what gov - livelihoods/food",
       "NumericValue": 22,
@@ -213,7 +213,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-cd7ad57a",
+      "CodeID": "code-108cedf0",
       "CodeType": "Normal",
       "DisplayText": "what gov - other rules/responses",
       "NumericValue": 23,
@@ -221,7 +221,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-9f3efe97",
+      "CodeID": "code-201dcf94",
       "CodeType": "Normal",
       "DisplayText": "opinion gov - tests and treatment",
       "NumericValue": 24,
@@ -229,7 +229,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-996afe37",
+      "CodeID": "code-bb36f900",
       "CodeType": "Normal",
       "DisplayText": "opinion gov - education",
       "NumericValue": 25,
@@ -237,7 +237,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-f488b7dc",
+      "CodeID": "code-6abb6c5f",
       "CodeType": "Normal",
       "DisplayText": "opinion gov - limits social activities",
       "NumericValue": 26,
@@ -245,7 +245,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-3cc97e5b",
+      "CodeID": "code-7ed4e093",
       "CodeType": "Normal",
       "DisplayText": "opinion gov - masks",
       "NumericValue": 27,
@@ -253,7 +253,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-2422dd73",
+      "CodeID": "code-d880ea90",
       "CodeType": "Normal",
       "DisplayText": "opinion gov - policing",
       "NumericValue": 28,
@@ -261,7 +261,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-e5862ba8",
+      "CodeID": "code-7cf29788",
       "CodeType": "Normal",
       "DisplayText": "opinion gov - curfew",
       "NumericValue": 29,
@@ -269,7 +269,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-0936820e",
+      "CodeID": "code-e19aa26b",
       "CodeType": "Normal",
       "DisplayText": "opinion gov - livelihoods/food",
       "NumericValue": 30,
@@ -277,7 +277,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-ebc50a63",
+      "CodeID": "code-ce06b46d",
       "CodeType": "Normal",
       "DisplayText": "opinion gov - other rules/responses",
       "NumericValue": 31,
@@ -285,7 +285,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-77f7d5bb",
+      "CodeID": "code-0ee5b06c",
       "CodeType": "Normal",
       "DisplayText": "collective hope - social distancing",
       "NumericValue": 32,
@@ -293,7 +293,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-3b524c8b",
+      "CodeID": "code-d6ca5a61",
       "CodeType": "Normal",
       "DisplayText": "collective hope - hygiene",
       "NumericValue": 33,
@@ -301,7 +301,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-46be2d96",
+      "CodeID": "code-1d0152d9",
       "CodeType": "Normal",
       "DisplayText": "collective hope - multiple",
       "NumericValue": 34,
@@ -309,7 +309,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-255e38ec",
+      "CodeID": "code-1f6029ac",
       "CodeType": "Normal",
       "DisplayText": "collective hope - pray",
       "NumericValue": 35,
@@ -317,7 +317,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-677831d7",
+      "CodeID": "code-2060794e",
       "CodeType": "Normal",
       "DisplayText": "anxiety - fear of getting virus",
       "NumericValue": 36,
@@ -325,7 +325,7 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-e4c2cb12",
+      "CodeID": "code-48d6ad08",
       "CodeType": "Normal",
       "DisplayText": "anxiety - stress/sadness",
       "NumericValue": 37,
