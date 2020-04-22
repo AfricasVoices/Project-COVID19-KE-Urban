@@ -4,6 +4,22 @@
     {
       "SourceType": "RapidPro",
       "Domain": "textit.in",
+      "TokenFileURL": "gs://avf-credentials/covid19-text-it-token.txt",
+      "ContactsFileName": "covid19_contacts",
+      "ActivationFlowNames": [
+        "covid19_s01e03_activation"
+      ],
+      "SurveyFlowNames": [
+        "covid19_s01_demog"
+      ],
+      "TestContactUUIDs": [
+        "eed078e5-7d13-4f3c-ac93-8b477125b31d",
+        "67836f40-a155-4757-850c-b407bd1cd475"
+      ]
+    },
+    {
+      "SourceType": "RapidPro",
+      "Domain": "textit.in",
       "TokenFileURL": "gs://avf-credentials/covid19-2-text-it-token.txt",
       "ContactsFileName": "covid19_2_contacts",
       "ActivationFlowNames": [
@@ -38,6 +54,20 @@
     {"RapidProKey": "Rqa_S01E03 (Text) - covid19_ke_urban_s01e03_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E03 (Run ID) - covid19_ke_urban_s01e03_activation", "PipelineKey": "rqa_s01e03_run_id"},
     {"RapidProKey": "Rqa_S01E03 (Time) - covid19_ke_urban_s01e03_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E02 (Text) - covid19_s01e03_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E02 (Run ID) - covid19_s01e03_activation", "PipelineKey": "rqa_s01e03_run_id"},
+    {"RapidProKey": "Rqa_S01E02 (Time) - covid19_s01e03_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_S01E03 (Text) - covid19_s01e03_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E03 (Run ID) - covid19_s01e03_activation", "PipelineKey": "rqa_s01e03_run_id"},
+    {"RapidProKey": "Rqa_S01E03 (Time) - covid19_s01e03_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Constituency (Text) - covid19_s01_demog", "PipelineKey": "location_raw"},
+    {"RapidProKey": "Constituency (Time) - covid19_s01_demog", "PipelineKey": "location_time"},
+    {"RapidProKey": "Gender (Text) - covid19_s01_demog", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Gender (Time) - covid19_s01_demog", "PipelineKey": "gender_time"},
+    {"RapidProKey": "Age (Text) - covid19_s01_demog", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Age (Time) - covid19_s01_demog", "PipelineKey": "age_time"},
 
     {"RapidProKey": "Constituency (Text) - covid19_ke_urban_s01_demog", "PipelineKey": "location_raw"},
     {"RapidProKey": "Constituency (Time) - covid19_ke_urban_s01_demog", "PipelineKey": "location_time"},
