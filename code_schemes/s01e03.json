@@ -60,7 +60,350 @@
       "VisibleInCoda": true,
       "Shortcut": "o"
     },
-
+    {
+      "CodeID": "code-cb9b3370",
+      "CodeType": "Normal",
+      "DisplayText": "about coronavirus",
+      "NumericValue": 4,
+      "StringValue": "about_coronavirus",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-06d24d11",
+      "CodeType": "Normal",
+      "DisplayText": "symptoms",
+      "NumericValue": 5,
+      "StringValue": "symptoms",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-677fe755",
+      "CodeType": "Normal",
+      "DisplayText": "how to prevent",
+      "NumericValue": 6,
+      "StringValue": "how_to_prevent",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1f676335",
+      "CodeType": "Normal",
+      "DisplayText": "how to treat",
+      "NumericValue": 7,
+      "StringValue": "how_to_treat",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-bd2f989e",
+      "CodeType": "Normal",
+      "DisplayText": "kenya update",
+      "NumericValue": 8,
+      "StringValue": "kenya_update",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c7cc1cde",
+      "CodeType": "Normal",
+      "DisplayText": "rumour/stigma/misinfo",
+      "NumericValue": 9,
+      "StringValue": "rumour_stigma_misinfo",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c5c54ecf",
+      "CodeType": "Normal",
+      "DisplayText": "anxiety/panic",
+      "NumericValue": 10,
+      "StringValue": "anxiety_panic",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-49a258a0",
+      "CodeType": "Normal",
+      "DisplayText": "right practice",
+      "NumericValue": 11,
+      "StringValue": "right_practice",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-34e83d51",
+      "CodeType": "Normal",
+      "DisplayText": "collective hope",
+      "NumericValue": 12,
+      "StringValue": "collective_hope",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5c5dbde9",
+      "CodeType": "Normal",
+      "DisplayText": "what is government policy",
+      "NumericValue": 13,
+      "StringValue": "what_is_government_policy",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-fbfde2a3",
+      "CodeType": "Normal",
+      "DisplayText": "opinion on government policy",
+      "NumericValue": 14,
+      "StringValue": "opinion_on_government_policy",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-41b0909f",
+      "CodeType": "Normal",
+      "DisplayText": "doing nothing",
+      "NumericValue": 15,
+      "StringValue": "doing_nothing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f361220b",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 16,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-75322506",
+      "CodeType": "Normal",
+      "DisplayText": "prevent - masks",
+      "NumericValue": 17,
+      "StringValue": "prevent_masks",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-072983b4",
+      "CodeType": "Normal",
+      "DisplayText": "prevent - hygiene",
+      "NumericValue": 18,
+      "StringValue": "prevent_hygiene",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8e9b1216",
+      "CodeType": "Normal",
+      "DisplayText": "anxiety - fear of getting virus",
+      "NumericValue": 19,
+      "StringValue": "anxiety_fear_of_getting_virus",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9829e4ec",
+      "CodeType": "Normal",
+      "DisplayText": "anxiety - stress/sadness",
+      "NumericValue": 20,
+      "StringValue": "anxiety_stress_sadness",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-135c3e1b",
+      "CodeType": "Normal",
+      "DisplayText": "right practice - masks",
+      "NumericValue": 21,
+      "StringValue": "right_practice_masks",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4aa8c360",
+      "CodeType": "Normal",
+      "DisplayText": "right practice - social distancing",
+      "NumericValue": 22,
+      "StringValue": "right_practice_social_distancing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8015aede",
+      "CodeType": "Normal",
+      "DisplayText": "right practice - hygiene",
+      "NumericValue": 23,
+      "StringValue": "right_practice_hygiene",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-00cc94b5",
+      "CodeType": "Normal",
+      "DisplayText": "right practice - staying home",
+      "NumericValue": 24,
+      "StringValue": "right_practice_staying_home",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2d482072",
+      "CodeType": "Normal",
+      "DisplayText": "right practice - multiple",
+      "NumericValue": 25,
+      "StringValue": "right_practice_multiple",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-660e58e3",
+      "CodeType": "Normal",
+      "DisplayText": "right practice - following guidelines",
+      "NumericValue": 26,
+      "StringValue": "right_practice_following_guidelines",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2a62cd0b",
+      "CodeType": "Normal",
+      "DisplayText": "collective hope - social distancing",
+      "NumericValue": 27,
+      "StringValue": "collective_hope_social_distancing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-487aa79c",
+      "CodeType": "Normal",
+      "DisplayText": "collective hope - hygiene",
+      "NumericValue": 28,
+      "StringValue": "collective_hope_hygiene",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b2162ee0",
+      "CodeType": "Normal",
+      "DisplayText": "collective hope - multiple",
+      "NumericValue": 29,
+      "StringValue": "collective_hope_multiple",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-7c49da65",
+      "CodeType": "Normal",
+      "DisplayText": "collective hope - pray",
+      "NumericValue": 30,
+      "StringValue": "collective_hope_pray",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e6f1eb73",
+      "CodeType": "Normal",
+      "DisplayText": "what gov - tests and treatment",
+      "NumericValue": 31,
+      "StringValue": "what_gov_tests_and_treatment",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f41f2dd1",
+      "CodeType": "Normal",
+      "DisplayText": "what gov - masks",
+      "NumericValue": 32,
+      "StringValue": "what_gov_masks",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-01e95e68",
+      "CodeType": "Normal",
+      "DisplayText": "what gov - education",
+      "NumericValue": 33,
+      "StringValue": "what_gov_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9e4829c3",
+      "CodeType": "Normal",
+      "DisplayText": "what gov - limits social activities",
+      "NumericValue": 34,
+      "StringValue": "what_gov_limits_social_activities",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-dafc79f2",
+      "CodeType": "Normal",
+      "DisplayText": "what gov - policing",
+      "NumericValue": 35,
+      "StringValue": "what_gov_policing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-894486e3",
+      "CodeType": "Normal",
+      "DisplayText": "what gov - curfew",
+      "NumericValue": 36,
+      "StringValue": "what_gov_curfew",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-44b7d29c",
+      "CodeType": "Normal",
+      "DisplayText": "what gov - livelihoods/food",
+      "NumericValue": 37,
+      "StringValue": "what_gov_livelihoods_food",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8118b9a2",
+      "CodeType": "Normal",
+      "DisplayText": "what gov - other rules/responses",
+      "NumericValue": 38,
+      "StringValue": "what_gov_other_rules_responses",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-984fcc56",
+      "CodeType": "Normal",
+      "DisplayText": "opinion gov - tests and treatment",
+      "NumericValue": 39,
+      "StringValue": "opinion_gov_tests_and_treatment",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4a7ade16",
+      "CodeType": "Normal",
+      "DisplayText": "opinion gov - education",
+      "NumericValue": 40,
+      "StringValue": "opinion_gov_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-df998181",
+      "CodeType": "Normal",
+      "DisplayText": "opinion gov - limits social activities",
+      "NumericValue": 41,
+      "StringValue": "opinion_gov_limits_social_activities",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-04d94b55",
+      "CodeType": "Normal",
+      "DisplayText": "opinion gov - masks",
+      "NumericValue": 42,
+      "StringValue": "opinion_gov_masks",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c8f72595",
+      "CodeType": "Normal",
+      "DisplayText": "opinion gov - policing",
+      "NumericValue": 43,
+      "StringValue": "opinion_gov_policing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-23fd002f",
+      "CodeType": "Normal",
+      "DisplayText": "opinion gov - curfew",
+      "NumericValue": 44,
+      "StringValue": "opinion_gov_curfew",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-945068d9",
+      "CodeType": "Normal",
+      "DisplayText": "opinion gov - livelihoods/food",
+      "NumericValue": 46,
+      "StringValue": "opinion_gov_livelihoods_food",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8dba0fa9",
+      "CodeType": "Normal",
+      "DisplayText": "opinion gov - other rules/responses",
+      "NumericValue": 47,
+      "StringValue": "opinion_gov_other_rules_responses",
+      "VisibleInCoda": true
+    },
     {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
