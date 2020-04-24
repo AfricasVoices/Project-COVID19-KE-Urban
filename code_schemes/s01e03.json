@@ -389,14 +389,6 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-802ebe7f",
-      "CodeType": "Normal",
-      "DisplayText": "opinion gov - curfew",
-      "NumericValue": 45,
-      "StringValue": "opinion_gov_curfew",
-      "VisibleInCoda": true
-    },
-    {
       "CodeID": "code-945068d9",
       "CodeType": "Normal",
       "DisplayText": "opinion gov - livelihoods/food",
