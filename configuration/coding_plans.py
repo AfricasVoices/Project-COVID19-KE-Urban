@@ -21,10 +21,27 @@ def clean_age_with_range_filter(text):
 
 def get_rqa_coding_plans(pipeline_name):
     return [
+        CodingPlan(raw_field="rqa_s01_pilot_raw",
+                   time_field="sent_on",
+                   run_id_field="rqa_s01_pilot_run_id",
+                   coda_filename="COVID19_s01e01.json",
+                   icr_filename="s01_pilot.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.S01_PILOT,
+                           coded_field="rqa_s01_pilot_coded",
+                           analysis_file_key="rqa_s01_pilot_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01_PILOT, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("COVID19 s01e01"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+        
         CodingPlan(raw_field="rqa_s01e01_raw",
                    time_field="sent_on",
                    run_id_field="rqa_s01e01_run_id",
-                   coda_filename="s01e01.json",
+                   coda_filename="COVID19_KE_Urban_s01e01.json",
                    icr_filename="s01e01.csv",
                    coding_configurations=[
                        CodingConfiguration(
@@ -41,7 +58,7 @@ def get_rqa_coding_plans(pipeline_name):
         CodingPlan(raw_field="rqa_s01e02_raw",
                    time_field="sent_on",
                    run_id_field="rqa_s01e02_run_id",
-                   coda_filename="s01e02.json",
+                   coda_filename="COVID19_KE_Urban_s01e02.json",
                    icr_filename="s01e02.csv",
                    coding_configurations=[
                        CodingConfiguration(
@@ -58,7 +75,7 @@ def get_rqa_coding_plans(pipeline_name):
         CodingPlan(raw_field="rqa_s01e03_raw",
                    time_field="sent_on",
                    run_id_field="rqa_s01e03_run_id",
-                   coda_filename="s01e03.json",
+                   coda_filename="COVID19_KE_Urban_s01e03.json",
                    icr_filename="s01e03.csv",
                    coding_configurations=[
                        CodingConfiguration(
@@ -75,7 +92,7 @@ def get_rqa_coding_plans(pipeline_name):
         CodingPlan(raw_field="rqa_s01e04_raw",
                    time_field="sent_on",
                    run_id_field="rqa_s01e04_run_id",
-                   coda_filename="s01e04.json",
+                   coda_filename="COVID19_KE_Urban_s01e04.json",
                    icr_filename="s01e04.csv",
                    coding_configurations=[
                        CodingConfiguration(
@@ -95,7 +112,7 @@ def get_survey_coding_plans(pipeline_name):
     return [
         CodingPlan(raw_field="gender_raw",
                    time_field="gender_time",
-                   coda_filename="gender.json",
+                   coda_filename="COVID19_gender.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -111,7 +128,7 @@ def get_survey_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="age_raw",
                    time_field="age_time",
-                   coda_filename="age.json",
+                   coda_filename="COVID19_age.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -134,7 +151,7 @@ def get_survey_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="location_raw",
                    time_field="location_time",
-                   coda_filename="location.json",
+                   coda_filename="COVID19_location.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,

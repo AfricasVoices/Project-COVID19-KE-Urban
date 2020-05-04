@@ -19,29 +19,21 @@ git checkout "9a9a8e708e3f20f37848a6b02f79bcee43e5be3b"  # (master which support
 
 mkdir -p "$DATA_ROOT/Coded Coda Files"
 
-PROJECT_NAME="COVID19_KE_Urban"
 DATASETS=(
-    "s01e01"
-    "s01e02"
-    "s01e03"
-    "s01e04"
+    "COVID19_s01e01"
+
+    "COVID19_KE_Urban_s01e01"
+    "COVID19_KE_Urban_s01e02"
+    "COVID19_KE_Urban_s01e03"
+    "COVID19_KE_Urban_s01e04"
+
+    "COVID19_location"
+    "COVID19_age"
+    "COVID19_gender"
 )
 for DATASET in ${DATASETS[@]}
 do
-    echo "Getting messages data from ${PROJECT_NAME}_${DATASET}..."
+    echo "Getting messages data from ${DATASET}..."
 
-    pipenv run python get.py "$AUTH" "${PROJECT_NAME}_${DATASET}" messages >"$DATA_ROOT/Coded Coda Files/$DATASET.json"
-done
-
-PROJECT_NAME="COVID19"
-DATASETS=(
-    "location"
-    "gender"
-    "age"
-)
-for DATASET in ${DATASETS[@]}
-do
-    echo "Getting messages data from ${PROJECT_NAME}_${DATASET}..."
-
-    pipenv run python get.py "$AUTH" "${PROJECT_NAME}_${DATASET}" messages >"$DATA_ROOT/Coded Coda Files/$DATASET.json"
+    pipenv run python get.py "$AUTH" "${DATASET}" messages >"$DATA_ROOT/Coded Coda Files/$DATASET.json"
 done

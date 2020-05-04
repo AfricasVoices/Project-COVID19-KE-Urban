@@ -18,29 +18,21 @@ DATA_ROOT=$3
 cd "$CODA_V2_ROOT/data_tools"
 git checkout "9a9a8e708e3f20f37848a6b02f79bcee43e5be3b"  # (master which supports segmenting)
 
-PROJECT_NAME="COVID19_KE_Urban"
 DATASETS=(
-    "s01e01"
-    "s01e02"
-    "s01e03"
-    "s01e04"
+    "COVID19_s01e01"
+
+    "COVID19_KE_Urban_s01e01"
+    "COVID19_KE_Urban_s01e02"
+    "COVID19_KE_Urban_s01e03"
+    "COVID19_KE_Urban_s01e04"
+
+    "COVID19_location"
+    "COVID19_age"
+    "COVID19_gender"
 )
 for DATASET in ${DATASETS[@]}
 do
-    echo "Pushing messages data to ${PROJECT_NAME}_${DATASET}..."
+    echo "Pushing messages data to ${DATASET}..."
 
-    pipenv run python add.py "$AUTH" "${PROJECT_NAME}_${DATASET}" messages "$DATA_ROOT/Outputs/Coda Files/$DATASET.json"
-done
-
-PROJECT_NAME="COVID19"
-DATASETS=(
-    "location"
-    "gender"
-    "age"
-)
-for DATASET in ${DATASETS[@]}
-do
-    echo "Pushing messages data to ${PROJECT_NAME}_${DATASET}..."
-
-    pipenv run python add.py "$AUTH" "${PROJECT_NAME}_${DATASET}" messages "$DATA_ROOT/Outputs/Coda Files/$DATASET.json"
+    pipenv run python add.py "$AUTH" "${DATASET}" messages "$DATA_ROOT/Outputs/Coda Files/$DATASET.json"
 done
