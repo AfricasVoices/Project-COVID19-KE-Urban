@@ -1,4 +1,6 @@
 from core_data_modules.cleaners import somali, swahili, Codes
+from core_data_modules.cleaners.cleaning_utils import CleaningUtils
+from core_data_modules.traced_data import Metadata
 from core_data_modules.traced_data.util.fold_traced_data import FoldStrategies
 
 from configuration import code_imputation_functions
@@ -108,8 +110,29 @@ def get_rqa_coding_plans(pipeline_name):
     ]
 
 
+def fold_source(x, y):
+    if x["CodeID"] == y["CodeID"]:
+        return x
+    else:
+        return CleaningUtils.make_label_from_cleaner_code(
+            CodeSchemes.SOURCE, CodeSchemes.SOURCE.get_code_with_match_value("both"), Metadata.get_call_location()
+        )
+
+
 def get_survey_coding_plans(pipeline_name):
     return [
+        CodingPlan(raw_field="source_raw",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.SINGLE,
+                           code_scheme=CodeSchemes.SOURCE,
+                           coded_field="source_coded",
+                           analysis_file_key="source",
+                           fold_strategy=fold_source
+                       )
+                   ],
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
         CodingPlan(raw_field="gender_raw",
                    time_field="gender_time",
                    coda_filename="COVID19_gender.json",
