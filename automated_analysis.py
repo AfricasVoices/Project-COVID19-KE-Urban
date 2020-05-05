@@ -370,7 +370,7 @@ if __name__ == "__main__":
 
         for sample in samples:
             writer.writerow(sample)
-
+            
     log.info("Loading the Kenya county geojson...")
     counties_map = geopandas.read_file("geojson/kenya_counties.geojson")
 
