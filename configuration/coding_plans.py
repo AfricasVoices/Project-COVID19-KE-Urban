@@ -116,7 +116,7 @@ def fold_source(x, y):
     else:
         return CleaningUtils.make_label_from_cleaner_code(
             CodeSchemes.SOURCE, CodeSchemes.SOURCE.get_code_with_match_value("both"), Metadata.get_call_location()
-        )
+        ).to_dict()
 
 
 def get_survey_coding_plans(pipeline_name):
