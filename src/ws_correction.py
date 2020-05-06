@@ -106,7 +106,7 @@ class WSCorrection(object):
         log.info("Performing WS correction...")
         corrected_data = []  # List of TracedData with the WS data moved.
         unknown_target_code_counts = dict()  # 'WS - Correct Dataset' codes with no matching code id in any coding plan
-        # for this project, with a count of the occurrences
+                                             # for this project, with a count of the occurrences
         for group in data_grouped_by_uid.values():
             # Find all the surveys data being moved.
             # (Note: we only need to check one td in this group because all the demographics are the same)
