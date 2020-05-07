@@ -1,0 +1,69 @@
+{
+  "SchemeID": "Scheme-f0ecdb96",
+  "Name": "Source",
+  "Version": "0.0.0.1",
+  "Codes": [
+    {
+      "CodeID": "code-6bce26f0",
+      "CodeType": "Normal",
+      "DisplayText": "jambo",
+      "NumericValue": 1,
+      "StringValue": "jambo",
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "jambo",
+        "Jambo"
+      ]
+    },
+    {
+      "CodeID": "code-36857718",
+      "CodeType": "Normal",
+      "DisplayText": "ghetto",
+      "NumericValue": 2,
+      "StringValue": "ghetto",
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "ghetto",
+        "Ghetto"
+      ]
+    },
+    {
+      "CodeID": "code-629c6be7",
+      "CodeType": "Normal",
+      "DisplayText": "both",
+      "NumericValue": 3,
+      "StringValue": "both",
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "both"
+      ]
+    },
+    {
+      "CodeID": "code-NA-f93d3eb7",
+      "CodeType": "Control",
+      "ControlCode": "NA",
+      "DisplayText": "NA (missing)",
+      "NumericValue": -10,
+      "StringValue": "NA",
+      "VisibleInCoda": false
+    },
+    {
+      "CodeID": "code-NC-42f1d983",
+      "CodeType": "Control",
+      "ControlCode": "NC",
+      "DisplayText": "NC (not coded)",
+      "NumericValue": -30,
+      "StringValue": "NC",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-STOP-08b832a8",
+      "CodeType": "Control",
+      "ControlCode": "STOP",
+      "DisplayText": "STOP",
+      "NumericValue": -90,
+      "StringValue": "STOP",
+      "VisibleInCoda": false
+    }
+  ]
+}

@@ -3,6 +3,7 @@
   "RawDataSources": [
     {
       "SourceType": "RapidPro",
+      "SourceName": "Jambo",
       "Domain": "textit.in",
       "TokenFileURL": "gs://avf-credentials/covid19-text-it-token.txt",
       "ContactsFileName": "covid19_contacts",
@@ -21,6 +22,7 @@
     },
     {
       "SourceType": "RapidPro",
+      "SourceName": "Ghetto",
       "Domain": "textit.in",
       "TokenFileURL": "gs://avf-credentials/covid19-2-text-it-token.txt",
       "ContactsFileName": "covid19_2_contacts",
