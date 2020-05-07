@@ -106,6 +106,40 @@ def get_rqa_coding_plans(pipeline_name):
                        )
                    ],
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("COVID19-KE-Urban s01e04"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+        CodingPlan(raw_field="rqa_s01e05_raw",
+                   time_field="sent_on",
+                   run_id_field="rqa_s01e05_run_id",
+                   coda_filename="COVID19_KE_Urban_s01e05.json",
+                   icr_filename="s01e05.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.S01E05,
+                           coded_field="rqa_s01e05_coded",
+                           analysis_file_key="rqa_s01e05_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01E05, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("COVID19-KE-Urban s01e05"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+        CodingPlan(raw_field="rqa_s01e06_raw",
+                   time_field="sent_on",
+                   run_id_field="rqa_s01e06_run_id",
+                   coda_filename="COVID19_KE_Urban_s01e06.json",
+                   icr_filename="s01e06.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.S01E06,
+                           coded_field="rqa_s01e06_coded",
+                           analysis_file_key="rqa_s01e06_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01E06, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("COVID19-KE-Urban s01e06"),
                    raw_field_fold_strategy=FoldStrategies.concatenate)
     ]
 

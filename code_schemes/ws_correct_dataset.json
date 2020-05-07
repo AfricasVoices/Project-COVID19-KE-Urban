@@ -103,6 +103,28 @@
       ]
     },
     {
+      "CodeID": "code-bf7e7e9f",
+      "CodeType": "Normal",
+      "DisplayText": "COVID19-KE-Urban s01e05",
+      "StringValue": "covid19_ke_urban_s01e05",
+      "NumericValue": 10,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "COVID19-KE-Urban s01e05"
+      ]
+    },
+    {
+      "CodeID": "code-1770ab02",
+      "CodeType": "Normal",
+      "DisplayText": "COVID19-KE-Urban s01e06",
+      "StringValue": "covid19_ke_urban_s01e06",
+      "NumericValue": 11,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "COVID19-KE-Urban s01e06"
+      ]
+    },
+    {
       "CodeID": "code-NC-42f1d983",
       "CodeType": "Control",
       "ControlCode": "NC",
