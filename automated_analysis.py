@@ -375,8 +375,13 @@ if __name__ == "__main__":
 
     log.info("Loading the Kenya constituency geojson...")
     constituencies_map = geopandas.read_file("geojson/kenya_constituencies.geojson")
-    # nairobi_map = constituencies_map[constituencies_map.ADM1_AVF.isin({KenyaCodes.NAIROBI, KenyaCodes.KIAMBU})]
-    nairobi_map = constituencies_map[constituencies_map.ADM1_AVF.isin({KenyaCodes.NAIROBI})]
+    nairobi_map = constituencies_map[constituencies_map.ADM1_AVF.isin({KenyaCodes.NAIROBI, KenyaCodes.KIAMBU})]
+    # Constituencies to label with their name, as requested by RDA for COVID19-KE-Urban
+    constituencies_to_name_label = {
+        # TODO: Switch to use KenyaCodes instead of strings
+        "kibra", "mathare", "embakasi_east", "embakasi_central", "kasarani",  # requested because urban-poor targets
+        "ruiru", "kikuyu", "kiambu"  # requested due to high participation
+    }
 
     constituency_display_names = dict()
     for i, admin_region in constituencies_map.iterrows():
@@ -388,8 +393,12 @@ if __name__ == "__main__":
     for code in CodeSchemes.KENYA_CONSTITUENCY.codes:
         if code.code_type == CodeTypes.NORMAL:
             nairobi_frequencies[code.string_value] = demographic_distributions["constituency"][code.string_value]
-            constituency_name = constituency_display_names[code.string_value]
-            labels[code.string_value] = constituency_name + "\n" + str(nairobi_frequencies[code.string_value])
+
+            if code.string_value in constituencies_to_name_label:
+                constituency_name = constituency_display_names[code.string_value]
+                labels[code.string_value] = constituency_name + "\n" + str(nairobi_frequencies[code.string_value])
+            else:
+                labels[code.string_value] = str(nairobi_frequencies[code.string_value])
 
     fig, ax = plt.subplots()
     MappingUtils.plot_frequency_map(nairobi_map, "ADM2_AVF", nairobi_frequencies, ax=ax,
