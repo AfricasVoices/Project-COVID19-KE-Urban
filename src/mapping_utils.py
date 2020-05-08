@@ -27,6 +27,8 @@ class MappingUtils(object):
         :type admin_id_column: str
         :param frequencies: Dictionary of admin_id -> frequency.
         :type frequencies: dict of str -> int
+        :param labels: Dictionary of admin_id -> text to annotate the map with for each administrative region.
+        :type labels: dict of str -> str
         :param label_position_columns: A tuple specifying which columns in the `geo_data` contain the positions to draw
                                        each frequency label at, or None.
                                        The format is (X Position Column, Y Position Column). Positions should be in
