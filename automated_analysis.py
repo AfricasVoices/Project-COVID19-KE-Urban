@@ -403,6 +403,7 @@ if __name__ == "__main__":
     fig, ax = plt.subplots()
     MappingUtils.plot_frequency_map(nairobi_map, "ADM2_AVF", nairobi_frequencies, ax=ax,
                                     labels=labels,
+                                    callout_position_columns=("ADM2_CALLX", "ADM2_CALLY"),
                                     label_position_columns=("ADM2_LX", "ADM2_LY"))
     fig.savefig(f"{output_dir}/maps/nairobi_total_participants.png", dpi=1200, bbox_inches="tight")
     plt.close(fig)
