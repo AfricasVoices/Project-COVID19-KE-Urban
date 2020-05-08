@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 from core_data_modules.cleaners import Codes
 from core_data_modules.cleaners.codes import KenyaCodes
+from core_data_modules.cleaners.location_tools import KenyaLocations
 from core_data_modules.data_models.code_scheme import CodeTypes
 from core_data_modules.logging import Logger
 from core_data_modules.traced_data.io import TracedDataJsonIO
@@ -374,16 +375,25 @@ if __name__ == "__main__":
 
     log.info("Loading the Kenya constituency geojson...")
     constituencies_map = geopandas.read_file("geojson/kenya_constituencies.geojson")
-    nairobi_map = constituencies_map[constituencies_map.ADM1_AVF == KenyaCodes.NAIROBI]
+    # nairobi_map = constituencies_map[constituencies_map.ADM1_AVF.isin({KenyaCodes.NAIROBI, KenyaCodes.KIAMBU})]
+    nairobi_map = constituencies_map[constituencies_map.ADM1_AVF.isin({KenyaCodes.NAIROBI})]
+
+    constituency_display_names = dict()
+    for i, admin_region in constituencies_map.iterrows():
+        constituency_display_names[admin_region.ADM2_AVF] = admin_region.ADM2_EN
 
     log.info("Generating a map of participation in Nairobi for the season")
     nairobi_frequencies = dict()
+    labels = dict()
     for code in CodeSchemes.KENYA_CONSTITUENCY.codes:
         if code.code_type == CodeTypes.NORMAL:
             nairobi_frequencies[code.string_value] = demographic_distributions["constituency"][code.string_value]
+            constituency_name = constituency_display_names[code.string_value]
+            labels[code.string_value] = constituency_name + "\n" + str(nairobi_frequencies[code.string_value])
 
     fig, ax = plt.subplots()
     MappingUtils.plot_frequency_map(nairobi_map, "ADM2_AVF", nairobi_frequencies, ax=ax,
+                                    labels=labels,
                                     label_position_columns=("ADM2_LX", "ADM2_LY"))
     fig.savefig(f"{output_dir}/maps/nairobi_total_participants.png", dpi=1200, bbox_inches="tight")
     plt.close(fig)
