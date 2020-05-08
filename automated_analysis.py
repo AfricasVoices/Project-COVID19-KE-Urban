@@ -375,7 +375,7 @@ if __name__ == "__main__":
 
     log.info("Loading the Kenya constituency geojson...")
     constituencies_map = geopandas.read_file("geojson/kenya_constituencies.geojson")
-    nairobi_map = constituencies_map[constituencies_map.ADM1_AVF.isin({KenyaCodes.NAIROBI, KenyaCodes.KIAMBU})]
+    urban_map = constituencies_map[constituencies_map.ADM1_AVF.isin({KenyaCodes.NAIROBI, KenyaCodes.KIAMBU})]
     # Constituencies to label with their name, as requested by RDA for COVID19-KE-Urban
     constituencies_to_name_label = {
         # TODO: Switch to use KenyaCodes instead of strings
@@ -388,23 +388,23 @@ if __name__ == "__main__":
         constituency_display_names[admin_region.ADM2_AVF] = admin_region.ADM2_EN
 
     log.info("Generating a map of participation in Nairobi for the season")
-    nairobi_frequencies = dict()
+    urban_frequencies = dict()
     labels = dict()
     for code in CodeSchemes.KENYA_CONSTITUENCY.codes:
         if code.code_type == CodeTypes.NORMAL:
-            nairobi_frequencies[code.string_value] = demographic_distributions["constituency"][code.string_value]
+            urban_frequencies[code.string_value] = demographic_distributions["constituency"][code.string_value]
 
             if code.string_value in constituencies_to_name_label:
                 constituency_name = constituency_display_names[code.string_value]
-                labels[code.string_value] = constituency_name + "\n" + str(nairobi_frequencies[code.string_value])
+                labels[code.string_value] = constituency_name + "\n" + str(urban_frequencies[code.string_value])
             else:
-                labels[code.string_value] = str(nairobi_frequencies[code.string_value])
+                labels[code.string_value] = str(urban_frequencies[code.string_value])
 
     fig, ax = plt.subplots()
-    MappingUtils.plot_frequency_map(nairobi_map, "ADM2_AVF", nairobi_frequencies, ax=ax,
+    MappingUtils.plot_frequency_map(urban_map, "ADM2_AVF", urban_frequencies, ax=ax,
                                     labels=labels, label_position_columns=("ADM2_LX", "ADM2_LY"),
                                     callout_position_columns=("ADM2_CALLX", "ADM2_CALLY"))
-    fig.savefig(f"{output_dir}/maps/nairobi_total_participants.png", dpi=1200, bbox_inches="tight")
+    fig.savefig(f"{output_dir}/maps/urban_total_participants.png", dpi=1200, bbox_inches="tight")
     plt.close(fig)
 
     exit(0)
