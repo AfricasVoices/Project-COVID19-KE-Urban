@@ -421,31 +421,31 @@ if __name__ == "__main__":
             plt.close(fig)
 
             # Plot maps of each of the normal themes for this coding configuration.
-            # map_index = 2  # (index 1 was used in the total relevant map's filename).
-            # for code in cc.code_scheme.codes:
-            #     if code.code_type != CodeTypes.NORMAL:
-            #         continue
-            #
-            #     theme = f"{cc.analysis_file_key}{code.string_value}"
-            #     log.info(f"Generating a map of per-county participation for {theme}...")
-            #     demographic_counts = episode[theme]
-            #
-            #     theme_county_frequencies = dict()
-            #     for county_code in CodeSchemes.KENYA_COUNTY.codes:
-            #         if county_code.code_type == CodeTypes.NORMAL:
-            #             theme_county_frequencies[county_code.string_value] = \
-            #                 demographic_counts[f"county:{county_code.string_value}"]
-            #
-            #     fig, ax = plt.subplots()
-            #     MappingUtils.plot_frequency_map(counties_map, "ADM1_AVF", theme_county_frequencies, ax=ax,
-            #                                     label_position_columns=("ADM1_LX", "ADM1_LY"),
-            #                                     callout_position_columns=("ADM1_CALLX", "ADM1_CALLY"))
-            #     MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-            #     fig.savefig(f"{output_dir}/maps/county_{cc.analysis_file_key}_{map_index}_{code.string_value}.png",
-            #                 dpi=1200, bbox_inches="tight")
-            #     plt.close(fig)
-            #
-            #     map_index += 1
+            map_index = 2  # (index 1 was used in the total relevant map's filename).
+            for code in cc.code_scheme.codes:
+                if code.code_type != CodeTypes.NORMAL:
+                    continue
+
+                theme = f"{cc.analysis_file_key}{code.string_value}"
+                log.info(f"Generating a map of per-county participation for {theme}...")
+                demographic_counts = episode[theme]
+
+                theme_county_frequencies = dict()
+                for county_code in CodeSchemes.KENYA_COUNTY.codes:
+                    if county_code.code_type == CodeTypes.NORMAL:
+                        theme_county_frequencies[county_code.string_value] = \
+                            demographic_counts[f"county:{county_code.string_value}"]
+
+                fig, ax = plt.subplots()
+                MappingUtils.plot_frequency_map(counties_map, "ADM1_AVF", theme_county_frequencies, ax=ax,
+                                                label_position_columns=("ADM1_LX", "ADM1_LY"),
+                                                callout_position_columns=("ADM1_CALLX", "ADM1_CALLY"))
+                MappingUtils.plot_water_bodies(lakes_map, ax=ax)
+                fig.savefig(f"{output_dir}/maps/county_{cc.analysis_file_key}_{map_index}_{code.string_value}.png",
+                            dpi=1200, bbox_inches="tight")
+                plt.close(fig)
+
+                map_index += 1
 
     # Produce maps of Kenya at constituency level
     log.info("Loading the Kenya constituency geojson...")
@@ -488,33 +488,33 @@ if __name__ == "__main__":
             plt.close(fig)
 
             # Plot maps of each of the normal themes for this coding configuration.
-            # map_index = 2  # (index 1 was used in the total relevant map's filename).
-            # for code in cc.code_scheme.codes:
-            #     if code.code_type != CodeTypes.NORMAL:
-            #         continue
-            #
-            #     theme = f"{cc.analysis_file_key}{code.string_value}"
-            #     log.info(f"Generating a map of per-constituency participation for {theme}...")
-            #     demographic_counts = episode[theme]
-            #
-            #     theme_constituency_frequencies = dict()
-            #     for constituency_code in CodeSchemes.KENYA_CONSTITUENCY.codes:
-            #         if constituency_code.code_type == CodeTypes.NORMAL:
-            #             theme_constituency_frequencies[constituency_code.string_value] = \
-            #                 demographic_counts[f"constituency:{constituency_code.string_value}"]
-            #
-            #     fig, ax = plt.subplots()
-            #     MappingUtils.plot_frequency_map(constituencies_map, "ADM2_AVF", theme_constituency_frequencies, ax=ax)
-            #     MappingUtils.plot_inset_frequency_map(
-            #         constituencies_map, "ADM2_AVF", theme_constituency_frequencies,
-            #         inset_region=(36.62, -1.46, 37.12, -1.09), zoom=3, inset_position=(35.60, -2.95), ax=ax)
-            #     MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-            #     plt.savefig(
-            #         f"{output_dir}/maps/constituency_{cc.analysis_file_key}_{map_index}_{code.string_value}.png",
-            #         dpi=1200, bbox_inches="tight")
-            #     plt.close(fig)
-            #
-            #     map_index += 1
+            map_index = 2  # (index 1 was used in the total relevant map's filename).
+            for code in cc.code_scheme.codes:
+                if code.code_type != CodeTypes.NORMAL:
+                    continue
+
+                theme = f"{cc.analysis_file_key}{code.string_value}"
+                log.info(f"Generating a map of per-constituency participation for {theme}...")
+                demographic_counts = episode[theme]
+
+                theme_constituency_frequencies = dict()
+                for constituency_code in CodeSchemes.KENYA_CONSTITUENCY.codes:
+                    if constituency_code.code_type == CodeTypes.NORMAL:
+                        theme_constituency_frequencies[constituency_code.string_value] = \
+                            demographic_counts[f"constituency:{constituency_code.string_value}"]
+
+                fig, ax = plt.subplots()
+                MappingUtils.plot_frequency_map(constituencies_map, "ADM2_AVF", theme_constituency_frequencies, ax=ax)
+                MappingUtils.plot_inset_frequency_map(
+                    constituencies_map, "ADM2_AVF", theme_constituency_frequencies,
+                    inset_region=(36.62, -1.46, 37.12, -1.09), zoom=3, inset_position=(35.60, -2.95), ax=ax)
+                MappingUtils.plot_water_bodies(lakes_map, ax=ax)
+                plt.savefig(
+                    f"{output_dir}/maps/constituency_{cc.analysis_file_key}_{map_index}_{code.string_value}.png",
+                    dpi=1200, bbox_inches="tight")
+                plt.close(fig)
+
+                map_index += 1
 
     # Produce maps of Nairobi/Kiambu at constituency level
     log.info("Loading the Kenya constituency geojson...")
