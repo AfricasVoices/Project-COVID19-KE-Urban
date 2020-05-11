@@ -12,7 +12,7 @@ class MappingUtils(object):
     WATER_COLOR = "#edf5ff"
 
     @classmethod
-    def plot_frequency_map(cls, geo_data, admin_id_column, frequencies, label_position_columns=None,
+    def plot_frequency_map(cls, geo_data, admin_id_column, frequencies, labels=None, label_position_columns=None,
                            callout_position_columns=None, show_legend=True, ax=None):
         """
         Plots a map of the given geo data with a choropleth showing the frequency of responses in each administrative
@@ -27,6 +27,8 @@ class MappingUtils(object):
         :type admin_id_column: str
         :param frequencies: Dictionary of admin_id -> frequency.
         :type frequencies: dict of str -> int
+        :param labels: Dictionary of admin_id -> text to annotate the map with for each administrative region.
+        :type labels: dict of str -> str
         :param label_position_columns: A tuple specifying which columns in the `geo_data` contain the positions to draw
                                        each frequency label at, or None.
                                        The format is (X Position Column, Y Position Column). Positions should be in
@@ -89,7 +91,7 @@ class MappingUtils(object):
         # Add a label to each administrative region showing its absolute frequency.
         # The font size is currently hard-coded for Kenyan counties.
         # TODO: Modify once per-map configuration needs are better understood by testing on other maps.
-        if label_position_columns is not None:
+        if labels is not None:
             for i, admin_region in geo_data.iterrows():
                 # Set label and callout positions from the features in the geo_data,
                 # translating from the geo_data format to the matplotlib format.
@@ -102,7 +104,7 @@ class MappingUtils(object):
                     xy = (admin_region[callout_position_columns[0]], admin_region[callout_position_columns[1]])
                     xytext = (admin_region[label_position_columns[0]], admin_region[label_position_columns[1]])
 
-                ax.annotate(s=frequencies[admin_region[admin_id_column]],
+                ax.annotate(s=labels[admin_region[admin_id_column]],
                             xy=xy, xytext=xytext,
                             arrowprops=dict(facecolor="black", arrowstyle="-", linewidth=0.1, shrinkA=0, shrinkB=0),
                             ha="center", va="center", fontsize=3.8)
