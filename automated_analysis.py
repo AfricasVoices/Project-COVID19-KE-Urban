@@ -479,35 +479,6 @@ if __name__ == "__main__":
                         dpi=1200, bbox_inches="tight")
             plt.close(fig)
 
-            # Plot maps of each of the normal themes for this coding configuration.
-            map_index = 2  # (index 1 was used in the total relevant map's filename).
-            for code in cc.code_scheme.codes:
-                if code.code_type != CodeTypes.NORMAL:
-                    continue
-
-                theme = f"{cc.analysis_file_key}{code.string_value}"
-                log.info(f"Generating a map of per-constituency participation for {theme}...")
-                demographic_counts = episode[theme]
-
-                theme_constituency_frequencies = dict()
-                for constituency_code in CodeSchemes.KENYA_CONSTITUENCY.codes:
-                    if constituency_code.code_type == CodeTypes.NORMAL:
-                        theme_constituency_frequencies[constituency_code.string_value] = \
-                            demographic_counts[f"constituency:{constituency_code.string_value}"]
-
-                fig, ax = plt.subplots()
-                MappingUtils.plot_frequency_map(constituencies_map, "ADM2_AVF", theme_constituency_frequencies, ax=ax)
-                MappingUtils.plot_inset_frequency_map(
-                    constituencies_map, "ADM2_AVF", theme_constituency_frequencies,
-                    inset_region=(36.62, -1.46, 37.12, -1.09), zoom=3, inset_position=(35.60, -2.95), ax=ax)
-                MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-                plt.savefig(
-                    f"{output_dir}/maps/constituency_{cc.analysis_file_key}_{map_index}_{code.string_value}.png",
-                    dpi=1200, bbox_inches="tight")
-                plt.close(fig)
-
-                map_index += 1
-
     log.info("Graphing the per-episode engagement counts...")
     # Graph the number of messages in each episode
     fig = px.bar([x for x in engagement_counts.values() if x["Episode"] != "Total"],
