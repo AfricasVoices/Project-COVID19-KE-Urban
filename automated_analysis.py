@@ -58,7 +58,9 @@ if __name__ == "__main__":
     output_dir = args.output_dir
 
     IOUtils.ensure_dirs_exist(output_dir)
-    IOUtils.ensure_dirs_exist(f"{output_dir}/maps")
+    IOUtils.ensure_dirs_exist(f"{output_dir}/maps/counties")
+    IOUtils.ensure_dirs_exist(f"{output_dir}/maps/constituencies")
+    IOUtils.ensure_dirs_exist(f"{output_dir}/maps/urban")
     IOUtils.ensure_dirs_exist(f"{output_dir}/graphs")
 
     log.info("Loading Pipeline Configuration File...")
@@ -395,7 +397,7 @@ if __name__ == "__main__":
                                     labels=labels, label_position_columns=("ADM1_LX", "ADM1_LY"),
                                     callout_position_columns=("ADM1_CALLX", "ADM1_CALLY"))
     MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-    fig.savefig(f"{output_dir}/maps/county_total_participants.png", dpi=1200, bbox_inches="tight")
+    fig.savefig(f"{output_dir}/maps/counties/county_total_participants.png", dpi=1200, bbox_inches="tight")
     plt.close(fig)
 
     for plan in PipelineConfiguration.RQA_CODING_PLANS:
@@ -416,7 +418,7 @@ if __name__ == "__main__":
                                             labels=labels, label_position_columns=("ADM1_LX", "ADM1_LY"),
                                             callout_position_columns=("ADM1_CALLX", "ADM1_CALLY"))
             MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-            fig.savefig(f"{output_dir}/maps/county_{cc.analysis_file_key}_1_total_relevant.png",
+            fig.savefig(f"{output_dir}/maps/counties/county_{cc.analysis_file_key}_1_total_relevant.png",
                         dpi=1200, bbox_inches="tight")
             plt.close(fig)
 
@@ -441,7 +443,7 @@ if __name__ == "__main__":
                                                 label_position_columns=("ADM1_LX", "ADM1_LY"),
                                                 callout_position_columns=("ADM1_CALLX", "ADM1_CALLY"))
                 MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-                fig.savefig(f"{output_dir}/maps/county_{cc.analysis_file_key}_{map_index}_{code.string_value}.png",
+                fig.savefig(f"{output_dir}/maps/counties/county_{cc.analysis_file_key}_{map_index}_{code.string_value}.png",
                             dpi=1200, bbox_inches="tight")
                 plt.close(fig)
 
@@ -463,7 +465,7 @@ if __name__ == "__main__":
         constituencies_map, "ADM2_AVF", constituency_frequencies,
         inset_region=(36.62, -1.46, 37.12, -1.09), zoom=3, inset_position=(35.60, -2.95), ax=ax)
     MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-    plt.savefig(f"{output_dir}/maps/constituency_total_participants.png", dpi=1200, bbox_inches="tight")
+    plt.savefig(f"{output_dir}/maps/constituencies/constituency_total_participants.png", dpi=1200, bbox_inches="tight")
     plt.close(fig)
 
     for plan in PipelineConfiguration.RQA_CODING_PLANS:
@@ -483,7 +485,7 @@ if __name__ == "__main__":
                 constituencies_map, "ADM2_AVF", rqa_total_constituency_frequencies,
                 inset_region=(36.62, -1.46, 37.12, -1.09), zoom=3, inset_position=(35.60, -2.95), ax=ax)
             MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-            plt.savefig(f"{output_dir}/maps/constituency_{cc.analysis_file_key}_1_total_relevant.png",
+            plt.savefig(f"{output_dir}/maps/constituencies/constituency_{cc.analysis_file_key}_1_total_relevant.png",
                         dpi=1200, bbox_inches="tight")
             plt.close(fig)
 
@@ -520,7 +522,7 @@ if __name__ == "__main__":
     MappingUtils.plot_frequency_map(urban_map, "ADM2_AVF", urban_frequencies, ax=ax,
                                     labels=labels, label_position_columns=("ADM2_LX", "ADM2_LY"),
                                     callout_position_columns=("ADM2_CALLX", "ADM2_CALLY"))
-    fig.savefig(f"{output_dir}/maps/urban_total_participants.png", dpi=1200, bbox_inches="tight")
+    fig.savefig(f"{output_dir}/maps/urban/urban_total_participants.png", dpi=1200, bbox_inches="tight")
     plt.close(fig)
 
     for plan in PipelineConfiguration.RQA_CODING_PLANS:
@@ -545,7 +547,7 @@ if __name__ == "__main__":
             MappingUtils.plot_frequency_map(urban_map, "ADM2_AVF", rqa_total_urban_frequencies, ax=ax,
                                             labels=labels, label_position_columns=("ADM2_LX", "ADM2_LY"),
                                             callout_position_columns=("ADM2_CALLX", "ADM2_CALLY"))
-            plt.savefig(f"{output_dir}/maps/urban_{cc.analysis_file_key}_1_total_relevant.png",
+            plt.savefig(f"{output_dir}/maps/urban/urban_{cc.analysis_file_key}_1_total_relevant.png",
                         dpi=1200, bbox_inches="tight")
             plt.close(fig)
 
@@ -690,12 +692,30 @@ if __name__ == "__main__":
                 target_folder_is_shared_with_me=True
             )
 
-        log.info("Uploading maps to Drive...")
-        paths_to_upload = glob(f"{output_dir}/maps/*.png")
+        log.info("Uploading county maps to Drive...")
+        paths_to_upload = glob(f"{output_dir}/maps/counties/*.png")
         for i, path in enumerate(paths_to_upload):
-            log.info(f"Uploading map {i + 1}/{len(paths_to_upload)}: {path}...")
+            log.info(f"Uploading county map {i + 1}/{len(paths_to_upload)}: {path}...")
             drive_client_wrapper.update_or_create(
-                path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps",
+                path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/counties",
+                target_folder_is_shared_with_me=True
+            )
+
+        log.info("Uploading constituency maps to Drive...")
+        paths_to_upload = glob(f"{output_dir}/maps/constituencies/*.png")
+        for i, path in enumerate(paths_to_upload):
+            log.info(f"Uploading constituency map {i + 1}/{len(paths_to_upload)}: {path}...")
+            drive_client_wrapper.update_or_create(
+                path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/constituencies",
+                target_folder_is_shared_with_me=True
+            )
+
+        log.info("Uploading urban maps to Drive...")
+        paths_to_upload = glob(f"{output_dir}/maps/urban/*.png")
+        for i, path in enumerate(paths_to_upload):
+            log.info(f"Uploading urban map {i + 1}/{len(paths_to_upload)}: {path}...")
+            drive_client_wrapper.update_or_create(
+                path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/urban",
                 target_folder_is_shared_with_me=True
             )
     else:
