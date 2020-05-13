@@ -418,12 +418,12 @@ if __name__ == "__main__":
                                             labels=labels, label_position_columns=("ADM1_LX", "ADM1_LY"),
                                             callout_position_columns=("ADM1_CALLX", "ADM1_CALLY"))
             MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-            fig.savefig(f"{output_dir}/maps/counties/county_{cc.analysis_file_key}_1_total_relevant.png",
+            fig.savefig(f"{output_dir}/maps/counties/county_{cc.analysis_file_key}total_relevant.png",
                         dpi=1200, bbox_inches="tight")
             plt.close(fig)
 
             # Plot maps of each of the normal themes for this coding configuration.
-            map_index = 2  # (index 1 was used in the total relevant map's filename).
+            map_index = 1
             for code in cc.code_scheme.codes:
                 if code.code_type != CodeTypes.NORMAL:
                     continue
@@ -443,7 +443,7 @@ if __name__ == "__main__":
                                                 label_position_columns=("ADM1_LX", "ADM1_LY"),
                                                 callout_position_columns=("ADM1_CALLX", "ADM1_CALLY"))
                 MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-                fig.savefig(f"{output_dir}/maps/counties/county_{cc.analysis_file_key}_{map_index}_{code.string_value}.png",
+                fig.savefig(f"{output_dir}/maps/counties/county_{cc.analysis_file_key}{map_index}_{code.string_value}.png",
                             dpi=1200, bbox_inches="tight")
                 plt.close(fig)
 
@@ -485,7 +485,7 @@ if __name__ == "__main__":
                 constituencies_map, "ADM2_AVF", rqa_total_constituency_frequencies,
                 inset_region=(36.62, -1.46, 37.12, -1.09), zoom=3, inset_position=(35.60, -2.95), ax=ax)
             MappingUtils.plot_water_bodies(lakes_map, ax=ax)
-            plt.savefig(f"{output_dir}/maps/constituencies/constituency_{cc.analysis_file_key}_1_total_relevant.png",
+            plt.savefig(f"{output_dir}/maps/constituencies/constituency_{cc.analysis_file_key}total_relevant.png",
                         dpi=1200, bbox_inches="tight")
             plt.close(fig)
 
@@ -547,7 +547,7 @@ if __name__ == "__main__":
             MappingUtils.plot_frequency_map(urban_map, "ADM2_AVF", rqa_total_urban_frequencies, ax=ax,
                                             labels=labels, label_position_columns=("ADM2_LX", "ADM2_LY"),
                                             callout_position_columns=("ADM2_CALLX", "ADM2_CALLY"))
-            plt.savefig(f"{output_dir}/maps/urban/urban_{cc.analysis_file_key}_1_total_relevant.png",
+            plt.savefig(f"{output_dir}/maps/urban/urban_{cc.analysis_file_key}total_relevant.png",
                         dpi=1200, bbox_inches="tight")
             plt.close(fig)
 
