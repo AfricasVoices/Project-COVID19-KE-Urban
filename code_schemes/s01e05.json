@@ -39,7 +39,7 @@
       "DisplayText": "deprecated: knowledge",
       "NumericValue": 1,
       "StringValue": "DEPRECATED_knowledge",
-      "VisibleInCoda": true
+      "VisibleInCoda": false
     },
     {
       "CodeID": "code-2fb946e0",
@@ -47,7 +47,7 @@
       "DisplayText": "deprecated: attitude",
       "NumericValue": 2,
       "StringValue": "DEPRECATED_attitude",
-      "VisibleInCoda": true
+      "VisibleInCoda": false
     },
     {
       "CodeID": "code-ec760b4e",
@@ -55,7 +55,7 @@
       "DisplayText": "deprecated: behaviour",
       "NumericValue": 3,
       "StringValue": "DEPRECATED_behaviour",
-      "VisibleInCoda": true
+      "VisibleInCoda": false
     },
     {
       "CodeID": "code-574014cc",
