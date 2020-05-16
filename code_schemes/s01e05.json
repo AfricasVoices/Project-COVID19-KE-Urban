@@ -36,26 +36,26 @@
     {
       "CodeID": "code-5e6fe313",
       "CodeType": "Normal",
-      "DisplayText": "knowledge",
+      "DisplayText": "deprecated: knowledge",
       "NumericValue": 1,
-      "StringValue": "knowledge",
-      "VisibleInCoda": true
+      "StringValue": "DEPRECATED_knowledge",
+      "VisibleInCoda": false
     },
     {
       "CodeID": "code-2fb946e0",
       "CodeType": "Normal",
-      "DisplayText": "attitude",
+      "DisplayText": "deprecated: attitude",
       "NumericValue": 2,
-      "StringValue": "attitude",
-      "VisibleInCoda": true
+      "StringValue": "DEPRECATED_attitude",
+      "VisibleInCoda": false
     },
     {
       "CodeID": "code-ec760b4e",
       "CodeType": "Normal",
-      "DisplayText": "behaviour",
+      "DisplayText": "deprecated: behaviour",
       "NumericValue": 3,
-      "StringValue": "behaviour",
-      "VisibleInCoda": true
+      "StringValue": "DEPRECATED_behaviour",
+      "VisibleInCoda": false
     },
     {
       "CodeID": "code-574014cc",
@@ -111,6 +111,110 @@
       "DisplayText": "how to treat",
       "NumericValue": 10,
       "StringValue": "how_to_treat",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-517f2708",
+      "CodeType": "Normal",
+      "DisplayText": "asking for help",
+      "NumericValue": 11,
+      "StringValue": "asking_for_help",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-48ea3521",
+      "CodeType": "Normal",
+      "DisplayText": "government responsibility",
+      "NumericValue": 12,
+      "StringValue": "government_responsibility",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-fbf93fd3",
+      "CodeType": "Normal",
+      "DisplayText": "educate community",
+      "NumericValue": 13,
+      "StringValue": "educate_community",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f68a5fdf",
+      "CodeType": "Normal",
+      "DisplayText": "nothing",
+      "NumericValue": 14,
+      "StringValue": "nothing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b24661a4",
+      "CodeType": "Normal",
+      "DisplayText": "giving food",
+      "NumericValue": 15,
+      "StringValue": "giving_food",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2f2a8493",
+      "CodeType": "Normal",
+      "DisplayText": "giving hygiene and sanitation supplies",
+      "NumericValue": 16,
+      "StringValue": "giving_hygiene_and_sanitation_supplies",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4c3d6b1c",
+      "CodeType": "Normal",
+      "DisplayText": "government mistrust",
+      "NumericValue": 17,
+      "StringValue": "government_mistrust",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-033712cf",
+      "CodeType": "Normal",
+      "DisplayText": "government COVID19 restrictions",
+      "NumericValue": 18,
+      "StringValue": "government_covid19_restrictions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-35635924",
+      "CodeType": "Normal",
+      "DisplayText": "aid misappropriation",
+      "NumericValue": 19,
+      "StringValue": "aid_misappropriation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-7e3b4bf3",
+      "CodeType": "Normal",
+      "DisplayText": "other support",
+      "NumericValue": 20,
+      "StringValue": "other_support",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-69f372c1",
+      "CodeType": "Normal",
+      "DisplayText": "following guidelines",
+      "NumericValue": 21,
+      "StringValue": "following_guidelines",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-7865133a",
+      "CodeType": "Normal",
+      "DisplayText": "test and treatments",
+      "NumericValue": 22,
+      "StringValue": "test_and_treatments",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f3b5acfd",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 23,
+      "StringValue": "other_theme",
       "VisibleInCoda": true
     },
     {
