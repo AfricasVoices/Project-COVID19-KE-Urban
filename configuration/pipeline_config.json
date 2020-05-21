@@ -33,8 +33,7 @@
         "covid19_ke_urban_s01e02_activation",
         "covid19_ke_urban_s01e03_activation",
         "covid19_ke_urban_s01e04_activation",
-        "covid19_ke_urban_s01e05_activation",
-        "covid19_ke_urban_s01e06_activation"
+        "covid19_ke_urban_s01e05_activation"
       ],
       "SurveyFlowNames": [
         "covid19_ke_urban_s01_demog"
@@ -75,10 +74,6 @@
     {"RapidProKey": "Rqa_S01E05 (Text) - covid19_ke_urban_s01e05_activation", "PipelineKey": "rqa_s01e05_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E05 (Run ID) - covid19_ke_urban_s01e05_activation", "PipelineKey": "rqa_s01e05_run_id"},
     {"RapidProKey": "Rqa_S01E05 (Time) - covid19_ke_urban_s01e05_activation", "PipelineKey": "sent_on"},
-
-    {"RapidProKey": "Rqa_S01E06 (Text) - covid19_ke_urban_s01e06_activation", "PipelineKey": "rqa_s01e06_raw", "IsActivationMessage": true},
-    {"RapidProKey": "Rqa_S01E06 (Run ID) - covid19_ke_urban_s01e06_activation", "PipelineKey": "rqa_s01e06_run_id"},
-    {"RapidProKey": "Rqa_S01E06 (Time) - covid19_ke_urban_s01e06_activation", "PipelineKey": "sent_on"},
 
     {"RapidProKey": "Rqa_S01E02 (Text) - covid19_s01e03_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E02 (Run ID) - covid19_s01e03_activation", "PipelineKey": "rqa_s01e03_run_id"},
