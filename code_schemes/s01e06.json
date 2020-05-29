@@ -90,6 +90,94 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-6a2b0a65",
+      "CodeType": "Normal",
+      "DisplayText": "food",
+      "NumericValue": 11,
+      "StringValue": "food",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9c0898a8",
+      "CodeType": "Normal",
+      "DisplayText": "hygiene and sanitation",
+      "NumericValue": 12,
+      "StringValue": "hygiene_and_sanitation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-61a07ec1",
+      "CodeType": "Normal",
+      "DisplayText": "lift restrictions",
+      "NumericValue": 13,
+      "StringValue": "lift_restrictions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5c6864a7",
+      "CodeType": "Normal",
+      "DisplayText": "education",
+      "NumericValue": 14,
+      "StringValue": "education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2863d44b",
+      "CodeType": "Normal",
+      "DisplayText": "testing and treatment",
+      "NumericValue": 15,
+      "StringValue": "testing_and_treatment",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-de0ff2f2",
+      "CodeType": "Normal",
+      "DisplayText": "general assistance",
+      "NumericValue": 16,
+      "StringValue": "general_assistance",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-702867c5",
+      "CodeType": "Normal",
+      "DisplayText": "financial support",
+      "NumericValue": 17,
+      "StringValue": "financial_support",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3347a5cf",
+      "CodeType": "Normal",
+      "DisplayText": "help with quarantine cost",
+      "NumericValue": 18,
+      "StringValue": "help_with_quarantine_cost",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cdb60770",
+      "CodeType": "Normal",
+      "DisplayText": "keep/enforce restrictions",
+      "NumericValue": 19,
+      "StringValue": "keep_enforce_restrictions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-abe51278",
+      "CodeType": "Normal",
+      "DisplayText": "community to follow guidelines",
+      "NumericValue": 20,
+      "StringValue": "community_to_follow_guidelines",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f90bd89c",
+      "CodeType": "Normal",
+      "DisplayText": "questions on govt response",
+      "NumericValue": 21,
+      "StringValue": "questions_on_govt_response",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
