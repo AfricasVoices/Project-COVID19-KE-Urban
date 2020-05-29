@@ -122,10 +122,18 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-2863d44b",
+      "CodeType": "Normal",
+      "DisplayText": "testing and treatment",
+      "NumericValue": 15,
+      "StringValue": "testing_and_treatment",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-de0ff2f2",
       "CodeType": "Normal",
       "DisplayText": "general assistance",
-      "NumericValue": 15,
+      "NumericValue": 16,
       "StringValue": "general_assistance",
       "VisibleInCoda": true
     },
@@ -133,7 +141,7 @@
       "CodeID": "code-702867c5",
       "CodeType": "Normal",
       "DisplayText": "financial support",
-      "NumericValue": 16,
+      "NumericValue": 17,
       "StringValue": "financial_support",
       "VisibleInCoda": true
     },
@@ -141,7 +149,7 @@
       "CodeID": "code-3347a5cf",
       "CodeType": "Normal",
       "DisplayText": "help with quarantine cost",
-      "NumericValue": 17,
+      "NumericValue": 18,
       "StringValue": "help_with_quarantine_cost",
       "VisibleInCoda": true
     },
@@ -149,7 +157,7 @@
       "CodeID": "code-cdb60770",
       "CodeType": "Normal",
       "DisplayText": "keep/enforce restrictions",
-      "NumericValue": 18,
+      "NumericValue": 19,
       "StringValue": "keep_enforce_restrictions",
       "VisibleInCoda": true
     },
@@ -157,7 +165,7 @@
       "CodeID": "code-abe51278",
       "CodeType": "Normal",
       "DisplayText": "community to follow guidelines",
-      "NumericValue": 19,
+      "NumericValue": 20,
       "StringValue": "community_to_follow_guidelines",
       "VisibleInCoda": true
     },
@@ -165,7 +173,7 @@
       "CodeID": "code-f90bd89c",
       "CodeType": "Normal",
       "DisplayText": "questions on govt response",
-      "NumericValue": 20,
+      "NumericValue": 21,
       "StringValue": "questions_on_govt_response",
       "VisibleInCoda": true
     },
