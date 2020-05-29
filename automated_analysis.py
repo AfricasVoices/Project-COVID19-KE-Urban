@@ -680,7 +680,8 @@ if __name__ == "__main__":
         for i, path in enumerate(paths_to_upload):
             log.info(f"Uploading CSV {i + 1}/{len(paths_to_upload)}: {path}...")
             drive_client_wrapper.update_or_create(
-                path, pipeline_configuration.drive_upload.analysis_graphs_dir, target_folder_is_shared_with_me=True
+                path, pipeline_configuration.drive_upload.analysis_graphs_dir, target_folder_is_shared_with_me=True,
+                recursive=True
             )
 
         log.info("Uploading graphs to Drive...")
@@ -689,7 +690,7 @@ if __name__ == "__main__":
             log.info(f"Uploading graph {i + 1}/{len(paths_to_upload)}: {path}...")
             drive_client_wrapper.update_or_create(
                 path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/graphs",
-                target_folder_is_shared_with_me=True
+                target_folder_is_shared_with_me=True, recursive=True
             )
 
         log.info("Uploading county maps to Drive...")
@@ -698,7 +699,7 @@ if __name__ == "__main__":
             log.info(f"Uploading county map {i + 1}/{len(paths_to_upload)}: {path}...")
             drive_client_wrapper.update_or_create(
                 path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/counties",
-                target_folder_is_shared_with_me=True
+                target_folder_is_shared_with_me=True, recursive=True
             )
 
         log.info("Uploading constituency maps to Drive...")
@@ -707,7 +708,7 @@ if __name__ == "__main__":
             log.info(f"Uploading constituency map {i + 1}/{len(paths_to_upload)}: {path}...")
             drive_client_wrapper.update_or_create(
                 path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/constituencies",
-                target_folder_is_shared_with_me=True
+                target_folder_is_shared_with_me=True, recursive=True
             )
 
         log.info("Uploading urban maps to Drive...")
@@ -716,7 +717,7 @@ if __name__ == "__main__":
             log.info(f"Uploading urban map {i + 1}/{len(paths_to_upload)}: {path}...")
             drive_client_wrapper.update_or_create(
                 path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/urban",
-                target_folder_is_shared_with_me=True
+                target_folder_is_shared_with_me=True, recursive=True
             )
     else:
         log.info("Skipping uploading to Google Drive (because the pipeline configuration json does not contain the key "
