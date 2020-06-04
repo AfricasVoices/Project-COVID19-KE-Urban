@@ -222,8 +222,7 @@ if __name__ == "__main__":
 
                     # Only compute a percentage for relevant codes.
                     if code.code_type == CodeTypes.NORMAL:
-                        row["Percent"] = round(participants_with_opt_ins / total_relevant[cc.analysis_file_key] * 100,
-                                               1)
+                        row["Percent"] = round(participants_with_opt_ins / total_relevant[cc.analysis_file_key] * 100, 1)
                     else:
                         row["Percent"] = ""
 
