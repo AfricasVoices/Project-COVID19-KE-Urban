@@ -697,50 +697,39 @@ if __name__ == "__main__":
         fig.write_image(f"{output_dir}/graphs/{plan.raw_field}_by_gender_normalised.png", scale=IMG_SCALE_FACTOR)
 
     if pipeline_configuration.drive_upload is not None:
-        log.info("Uploading CSVs to Drive...")
         paths_to_upload = glob(f"{output_dir}/*.csv")
-        for i, path in enumerate(paths_to_upload):
-            log.info(f"Uploading CSV {i + 1}/{len(paths_to_upload)}: {path}...")
-            drive_client_wrapper.update_or_create(
-                path, pipeline_configuration.drive_upload.analysis_graphs_dir, target_folder_is_shared_with_me=True,
-                recursive=True
-            )
+        log.info(f"Uploading {len(paths_to_upload)} CSVs to Drive...")
+        drive_client_wrapper.update_or_create_batch(
+            paths_to_upload, pipeline_configuration.drive_upload.analysis_graphs_dir,
+            target_folder_is_shared_with_me=True, recursive=True
+        )
 
-        log.info("Uploading graphs to Drive...")
         paths_to_upload = glob(f"{output_dir}/graphs/*.png")
-        for i, path in enumerate(paths_to_upload):
-            log.info(f"Uploading graph {i + 1}/{len(paths_to_upload)}: {path}...")
-            drive_client_wrapper.update_or_create(
-                path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/graphs",
-                target_folder_is_shared_with_me=True, recursive=True
-            )
+        log.info(f"Uploading {len(paths_to_upload)} graphs to Drive...")
+        drive_client_wrapper.update_or_create_batch(
+            paths_to_upload, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/graphs",
+            target_folder_is_shared_with_me=True, recursive=True
+        )
 
-        log.info("Uploading county maps to Drive...")
         paths_to_upload = glob(f"{output_dir}/maps/counties/*.png")
-        for i, path in enumerate(paths_to_upload):
-            log.info(f"Uploading county map {i + 1}/{len(paths_to_upload)}: {path}...")
-            drive_client_wrapper.update_or_create(
-                path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/counties",
-                target_folder_is_shared_with_me=True, recursive=True
-            )
+        log.info(f"Uploading {len(paths_to_upload)} county maps to Drive...")
+        drive_client_wrapper.update_or_create_batch(
+            paths_to_upload, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/counties",
+            target_folder_is_shared_with_me=True, recursive=True
+        )
 
-        log.info("Uploading constituency maps to Drive...")
         paths_to_upload = glob(f"{output_dir}/maps/constituencies/*.png")
-        for i, path in enumerate(paths_to_upload):
-            log.info(f"Uploading constituency map {i + 1}/{len(paths_to_upload)}: {path}...")
-            drive_client_wrapper.update_or_create(
-                path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/constituencies",
-                target_folder_is_shared_with_me=True, recursive=True
-            )
-
-        log.info("Uploading urban maps to Drive...")
+        log.info(f"Uploading {len(paths_to_upload)} constituency maps to Drive...")
+        drive_client_wrapper.update_or_create_batch(
+            paths_to_upload, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/constituencies",
+            target_folder_is_shared_with_me=True, recursive=True
+        )
         paths_to_upload = glob(f"{output_dir}/maps/urban/*.png")
-        for i, path in enumerate(paths_to_upload):
-            log.info(f"Uploading urban map {i + 1}/{len(paths_to_upload)}: {path}...")
-            drive_client_wrapper.update_or_create(
-                path, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/urban",
-                target_folder_is_shared_with_me=True, recursive=True
-            )
+        log.info(f"Uploading {len(paths_to_upload)} urban maps to Drive...")
+        drive_client_wrapper.update_or_create_batch(
+            paths_to_upload, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/urban",
+            target_folder_is_shared_with_me=True, recursive=True
+        )
     else:
         log.info("Skipping uploading to Google Drive (because the pipeline configuration json does not contain the key "
                  "'DriveUploadPaths')")
