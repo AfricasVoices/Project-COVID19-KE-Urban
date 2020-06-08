@@ -75,7 +75,7 @@
       "DisplayText": "COVID19-KE-Urban s01e02",
       "StringValue": "covid19_ke_urban_s01e02",
       "NumericValue": 7,
-      "VisibleInCoda": true,
+      "VisibleInCoda": false,
       "MatchValues": [
         "COVID19-KE-Urban s01e02"
       ]
@@ -122,6 +122,17 @@
       "VisibleInCoda": true,
       "MatchValues": [
         "COVID19-KE-Urban s01e06"
+      ]
+    },
+    {
+      "CodeID": "code-5342d0d4",
+      "CodeType": "Normal",
+      "DisplayText": "COVID19-KE-Urban s01e07",
+      "StringValue": "covid19_ke_urban_s01e07",
+      "NumericValue": 12,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "COVID19-KE-Urban s01e07"
       ]
     },
     {

@@ -140,6 +140,23 @@ def get_rqa_coding_plans(pipeline_name):
                        )
                    ],
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("COVID19-KE-Urban s01e06"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+        CodingPlan(raw_field="rqa_s01e07_raw",
+                   time_field="sent_on",
+                   run_id_field="rqa_s01e07_run_id",
+                   coda_filename="COVID19_KE_Urban_s01e07.json",
+                   icr_filename="s01e07.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.S01E07,
+                           coded_field="rqa_s01e07_coded",
+                           analysis_file_key="rqa_s01e07_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01E07, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("COVID19-KE-Urban s01e07"),
                    raw_field_fold_strategy=FoldStrategies.concatenate)
     ]
 

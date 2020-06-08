@@ -27,6 +27,7 @@ DATASETS=(
     "COVID19_KE_Urban_s01e04"
     "COVID19_KE_Urban_s01e05"
     "COVID19_KE_Urban_s01e06"
+    "COVID19_KE_Urban_s01e07"
 
     "COVID19_location"
     "COVID19_age"

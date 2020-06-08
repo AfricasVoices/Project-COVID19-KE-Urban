@@ -18,6 +18,7 @@ class CodeSchemes(object):
     S01E04 = _open_scheme("s01e04.json")
     S01E05 = _open_scheme("s01e05.json")
     S01E06 = _open_scheme("s01e06.json")
+    S01E07 = _open_scheme("s01e07.json")
 
     SOURCE = _open_scheme("source.json")
 
