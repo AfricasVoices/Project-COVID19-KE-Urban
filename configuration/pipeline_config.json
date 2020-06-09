@@ -124,6 +124,7 @@
     "IndividualsUploadPath": "covid19_ke_urban_analysis_outputs/covid19_ke_urban_individuals.csv",
     "AnalysisGraphsDir": "covid19_ke_urban_analysis_outputs/covid19_ke_urban_automated_analysis"
   },
-  "MemoryProfileUploadURLPrefix": "gs://avf-pipeline-logs-performance-nearline/2020/COVID19-KE-URBAN/memory-",
-  "DataArchiveUploadURLPrefix": "gs://pipeline-execution-backup-archive/2020/COVID19-KE-URBAN/data-"
+  "MemoryProfileUploadBucket": "gs://avf-pipeline-logs-performance-nearline",
+  "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
+  "BucketDirPath": "2020/COVID19-KE-URBAN"
 }
