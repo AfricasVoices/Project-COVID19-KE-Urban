@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a2be69df96b6d827152d5a407dbd36134a2b9633a0dacd43c144b8d4523f7c70"
+            "sha256": "78c5a1f0870dd6567b440159d8eb4f7a8c0104f8777545f1aaca86eded9cc89e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -42,10 +42,10 @@
         },
         "certifi": {
             "hashes": [
-                "sha256:1d987a998c75633c40847cc966fcf5904906c920a7f17ef374f5aa4282abd304",
-                "sha256:51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"
+                "sha256:5ad7e9a056d25ffa5082862e36f119f7f7cec6457fa07ee2f8c339814b80c9b1",
+                "sha256:9cd41137dc19af6a5e03b630eefe7d1f458d964d406342dd3edf625839b944cc"
             ],
-            "version": "==2020.4.5.1"
+            "version": "==2020.4.5.2"
         },
         "chardet": {
             "hashes": [
@@ -150,11 +150,11 @@
                 "grpc"
             ],
             "hashes": [
-                "sha256:0919cd91fef23d85bd27d247bd7bde02bd842f0b85fa3364586a13e7d0f34aff",
-                "sha256:ba1ee414c97ee25ea8e62e6525e14026c3e194aed0493085623b8b8bb03e1060"
+                "sha256:30beef3c1a98789e380e157ed915fc57f8fb53b22c2410b20e9f9aad332741bc",
+                "sha256:6ce7609320449ad8680312395b89396a7d6951032f1886bb1a16534e4ff3867d"
             ],
             "markers": "platform_python_implementation != 'PyPy'",
-            "version": "==1.19.0"
+            "version": "==1.19.1"
         },
         "google-api-python-client": {
             "hashes": [
@@ -432,7 +432,7 @@
         "pipelineinfrastructure": {
             "editable": true,
             "git": "https://www.github.com/AfricasVoices/Pipeline-Infrastructure",
-            "ref": "12dedfa0b527fba95996b2c24677e6d2ca0d0d07"
+            "ref": "ce23b86881ecde1c67ddc64023556a69335e04b1"
         },
         "plotly": {
             "hashes": [
