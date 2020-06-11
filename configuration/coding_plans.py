@@ -153,7 +153,7 @@ def fold_source(x, y):
         ).to_dict()
 
 
-def get_survey_coding_plans(pipeline_name):
+def get_demog_coding_plans(pipeline_name):
     return [
         CodingPlan(raw_field="source_raw",
                    coding_configurations=[
@@ -229,6 +229,10 @@ def get_survey_coding_plans(pipeline_name):
                    ws_code=CodeSchemes.WS_CORRECT_DATASET.get_code_with_match_value("location"),
                    raw_field_fold_strategy=FoldStrategies.assert_equal)
     ]
+
+
+def get_follow_up_coding_plans(pipeline_name):
+    return []
 
 
 def get_ws_correct_dataset_scheme(pipeline_name):
