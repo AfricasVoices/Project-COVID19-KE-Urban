@@ -24,7 +24,8 @@ done
 if [[ $# -ne 6 ]]; then
     echo "Usage: ./docker-run.sh
     [--profile-cpu <profile-output-path>]
-    <user> <google-cloud-credentials-file-path> <pipeline-configuration-file-path> <messages-traced-data> <individuals-traced-data> <output-dir>"
+    <user> <google-cloud-credentials-file-path> <pipeline-configuration-file-path>
+    <messages-traced-data> <individuals-traced-data> <automated-analysis-output-dir>"
     exit
 fi
 
@@ -34,7 +35,7 @@ INPUT_GOOGLE_CLOUD_CREDENTIALS=$2
 INPUT_PIPELINE_CONFIGURATION=$3
 INPUT_MESSAGES_TRACED_DATA=$4
 INPUT_INDIVIDUALS_TRACED_DATA=$5
-OUTPUT_DIR=$6
+AUTOMATED_ANALYSIS_OUTPUT_DIR=$6
 
 # Build an image for this pipeline stage.
 docker build -t "$IMAGE_NAME" .
@@ -46,7 +47,7 @@ if [[ "$PROFILE_CPU" = true ]]; then
 fi
 CMD="pipenv run python -u $PROFILE_CPU_CMD automated_analysis.py \
     \"$USER\" /credentials/google-cloud-credentials.json /data/pipeline_configuration.json \
-    /data/messages-traced-data.jsonl /data/individuals-traced-data.jsonl /data/output-graphs
+    /data/messages-traced-data.jsonl /data/individuals-traced-data.jsonl /data/automated-analysis-outputs
 "
 container="$(docker container create ${SYS_PTRACE_CAPABILITY} -w /app "$IMAGE_NAME" /bin/bash -c "$CMD")"
 echo "Created container $container"
@@ -70,9 +71,9 @@ echo "Starting container $container_short_id"
 docker start -a -i "$container"
 
 # Copy the output data back out of the container
-echo "Copying $container_short_id:/data/output-graphs/. -> $OUTPUT_DIR"
-mkdir -p "$OUTPUT_DIR"
-docker cp "$container:/data/output-graphs/." "$OUTPUT_DIR"
+echo "Copying $container_short_id:/data/automated-analysis-outputs/. -> $AUTOMATED_ANALYSIS_OUTPUT_DIR"
+mkdir -p "$AUTOMATED_ANALYSIS_OUTPUT_DIR"
+docker cp "$container:/data/automated-analysis-outputs/." "$AUTOMATED_ANALYSIS_OUTPUT_DIR"
 
 if [[ "$PROFILE_CPU" = true ]]; then
     echo "Copying $container_short_id:/data/cpu.prof -> $CPU_PROFILE_OUTPUT_PATH"
