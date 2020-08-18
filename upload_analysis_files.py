@@ -63,52 +63,52 @@ if __name__ == "__main__":
         production_csv_drive_file_name = os.path.basename(pipeline_configuration.drive_upload.production_upload_path)
         drive_client_wrapper.update_or_create(production_csv_input_path, production_csv_drive_dir,
                                               target_file_name=production_csv_drive_file_name,
-                                              target_folder_is_shared_with_me=True, recursive=True)
+                                              target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True)
 
         messages_csv_drive_dir = os.path.dirname(pipeline_configuration.drive_upload.messages_upload_path)
         messages_csv_drive_file_name = os.path.basename(pipeline_configuration.drive_upload.messages_upload_path)
         drive_client_wrapper.update_or_create(messages_csv_input_path, messages_csv_drive_dir,
                                               target_file_name=messages_csv_drive_file_name,
-                                              target_folder_is_shared_with_me=True, recursive=True)
+                                              target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True)
 
         individuals_csv_drive_dir = os.path.dirname(pipeline_configuration.drive_upload.individuals_upload_path)
         individuals_csv_drive_file_name = os.path.basename(pipeline_configuration.drive_upload.individuals_upload_path)
         drive_client_wrapper.update_or_create(individuals_csv_input_path, individuals_csv_drive_dir,
                                               target_file_name=individuals_csv_drive_file_name,
-                                              target_folder_is_shared_with_me=True, recursive=True)
+                                              target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True)
 
         paths_to_upload = glob(f"{automated_analysis_input_dir}/*.csv")
         log.info(f"Uploading {len(paths_to_upload)} CSVs to Drive...")
         drive_client_wrapper.update_or_create_batch(
             paths_to_upload, pipeline_configuration.drive_upload.analysis_graphs_dir,
-            target_folder_is_shared_with_me=True, recursive=True
+            target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True
         )
 
         paths_to_upload = glob(f"{automated_analysis_input_dir}/graphs/*.png")
         log.info(f"Uploading {len(paths_to_upload)} graphs to Drive...")
         drive_client_wrapper.update_or_create_batch(
             paths_to_upload, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/graphs",
-            target_folder_is_shared_with_me=True, recursive=True
+            target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True
         )
 
         paths_to_upload = glob(f"{automated_analysis_input_dir}/maps/counties/*.png")
         log.info(f"Uploading {len(paths_to_upload)} county maps to Drive...")
         drive_client_wrapper.update_or_create_batch(
             paths_to_upload, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/counties",
-            target_folder_is_shared_with_me=True, recursive=True
+            target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True
         )
 
         paths_to_upload = glob(f"{automated_analysis_input_dir}/maps/constituencies/*.png")
         log.info(f"Uploading {len(paths_to_upload)} constituency maps to Drive...")
         drive_client_wrapper.update_or_create_batch(
             paths_to_upload, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/constituencies",
-            target_folder_is_shared_with_me=True, recursive=True
+            target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True
         )
         paths_to_upload = glob(f"{automated_analysis_input_dir}/maps/urban/*.png")
         log.info(f"Uploading {len(paths_to_upload)} urban maps to Drive...")
         drive_client_wrapper.update_or_create_batch(
             paths_to_upload, f"{pipeline_configuration.drive_upload.analysis_graphs_dir}/maps/urban",
-            target_folder_is_shared_with_me=True, recursive=True
+            target_folder_is_shared_with_me=True, recursive=True, fix_duplicates=True
         )
     else:
         log.info("Skipping uploading to Google Drive (because the pipeline configuration json does not contain the key "
